@@ -1,15 +1,22 @@
 <template>
-  <div>
-    Все продукты
-  </div>
+  <section class="content">
+    <PodcategoryBlock />
+    <router-view></router-view>
+  </section>
 </template>
 
 <script>
-export default {
+import PodcategoryBlock from '@/components/PodcategoryBlock'
 
+export default {
+  components: {
+    PodcategoryBlock
+  }
 }
 </script>
 
-<style>
-
+<style scoped>
+.content{
+  display: flex;
+}
 </style>
