@@ -1,0 +1,65 @@
+form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+fieldset{
+    border: none;
+}
+.star-list p{
+    margin-bottom: 10px;
+}
+.name-reviewer{
+    margin-top: 22px;
+}
+.text-reviewer{
+    margin-top: 22px;
+}
+.name-reviewer input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #898989;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #424242;
+    padding: 11px 16px;
+    margin-top: 9px;
+}
+.text-reviewer textarea{
+    width: 100%;
+    height: 150px;
+    background: #FFFFFF;
+    border: 1px solid #898989;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none;
+    color: #424242;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto';
+    padding: 11px 12px;
+    margin-top: 9px;
+}
+.submit-review{
+    margin-top: 26px;
+}
+#rate{
+    display: none;
+}
+form::-webkit-scrollbar{
+    width: 5px;
+  }
+  form::-webkit-scrollbar-track{
+    background: #898989;
+    border-radius: 15px;
+  }
+  form::-webkit-scrollbar-thumb{
+    background: #FF6969;
+    border-radius: 15px;
+  }

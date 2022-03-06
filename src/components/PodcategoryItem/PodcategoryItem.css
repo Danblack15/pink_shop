@@ -1,0 +1,10 @@
+.podcategory-item {
+  width: 100%;
+  padding: 16px 0;
+  padding-left: 30px;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.podcategory-item:hover {
+  color: #FF6969;
+}

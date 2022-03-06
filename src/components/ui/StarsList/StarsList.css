@@ -1,0 +1,6 @@
+.rating{
+    display: flex;
+}
+.rating img{
+    margin-right: 2px;
+}

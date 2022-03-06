@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import ProductsPage from '@/views/ProductsPage'
-import ProductsBlock from '@/views/ProductsBlock'
+import ProductsPage from '@/views/ProductsPage/ProductsPage'
+import ProductsBlock from '@/views/ProductsBlock/ProductsBlock'
 
 const routes = [
     {
@@ -15,14 +15,15 @@ const routes = [
             {
                 path: ':id',
                 component:  ProductsBlock
-            }
+            },
         ]
-    },
+    }
+
 ]
 
 const router = createRouter({
-    routes,
-    history: createWebHistory(process.env.BASE_URL)
+    history: createWebHistory(process.env.BASE_URL),
+    routes
 })
 
 export default router

@@ -1,0 +1,100 @@
+.tabs{
+    width: 565px;
+    margin-top: 20px;
+    height: 38vh;
+}
+.tabs__nav ul{
+    display: flex;
+    font-size: 16px;
+}
+.tabs__nav ul li{
+    margin-right: 19px;
+    border-bottom: 3px solid #E4E2E2;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+.tabs__nav ul li:hover{
+    border-bottom: 3px solid #FF6969;
+}
+.tabs__item-list{
+    padding-top: 16px;
+    width: 100%;
+    height: 91%;
+    position: relative;
+}
+.tabs__item-list__item{
+    display: none;
+}
+.show{
+    display: block;
+}
+.active{
+    border-bottom: 3px solid #FF6969 !important;
+}
+/*DESC*/
+.tabs__item-list__item__description{
+    font-size: 16px;
+    line-height: 19px;
+}
+/*PROPS(width, heigth..)*/
+.tabs__item-list__item__props div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 9px 7px;
+    color: #000000;
+}
+.tabs__item-list__item__props div p:nth-child(2){
+    color: #979494;
+}
+.tabs__item-list__item__props div:nth-child(odd) {
+    background: #F3F3F3;
+}
+/*REVIEWS*/
+.tabs__item-list__item__reviews{
+    overflow-y: scroll;
+    position: absolute; 
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    padding-top: 15px;
+}
+.tabs__item-list__item__reviews::-webkit-scrollbar{
+    display: none;
+}
+.tabs__item-list__item__reviews__reviews{
+    display: flex;
+    margin-bottom: 25px;
+}
+.tabs__item-list__item__reviews__reviews__img{
+    text-align: center;
+    padding-right: 11px;
+}
+.tabs__item-list__item__reviews__reviews__img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.tabs__item-list__item__reviews__reviews__info{
+    width: 100%;
+}
+.tabs__item-list__item__reviews__reviews__info div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+.tabs__item-list__item__reviews__reviews__info div:nth-child(2) p{
+    padding: 13px 14px;
+    line-height: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    background: #F3F3F3;
+    margin-top: 7px;
+    font-size: 14px;
+}
+.tabs__item-list__item__not-reviews{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

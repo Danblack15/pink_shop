@@ -1,0 +1,20 @@
+.podcategory_block {
+	min-width: 325px;
+	height: 100vh;
+	padding-top: 60px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+	position: relative;
+}
+
+.podcategory_block ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.loading_block {
+	margin-top: 100px;
+}
+
+.router-link-active {
+	color: #FF6969;
+}

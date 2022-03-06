@@ -10,7 +10,7 @@ body{
 ul, li{
     list-style: none;
 }
-input{
+input, button, textarea{
     border: none;
     outline: none;
 }
