@@ -1,7 +1,8 @@
-svg{
+svg {
     cursor: pointer;
     margin-right: 2px;
 }
-svg:hover path{
-    fill:#F1C450 !important;
+
+svg:hover path {
+    fill: #F1C450 !important;
 }

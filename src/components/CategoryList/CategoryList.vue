@@ -4,15 +4,14 @@
       v-for="item in sortData"
       :item="item"
       :key="item.id"
-      v-model:selected="item.selected"
     />
   </ul>
   <LoadingBlock v-else class="loading_block" />
 </template>
 
 <script>
-import CategoryItem from "@/components/CategoryItem/CategoryItem";
-import { mapGetters } from "vuex";
+import CategoryItem from "@/components/CategoryItem/CategoryItem"
+import { mapGetters } from "vuex"
 
 export default {
   components: {
@@ -22,7 +21,7 @@ export default {
   computed: {
     ...mapGetters({
       sortData: "data/sortData",
-      isLoading: "data/isLoading"
+      isLoading: "data/isLoading",
     }),
   },
 };

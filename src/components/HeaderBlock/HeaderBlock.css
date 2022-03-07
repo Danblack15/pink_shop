@@ -41,7 +41,8 @@ header {
   position: relative;
   cursor: pointer;
 }
-.wrapper-basket__length-basket{
+
+.wrapper-basket__length-basket {
   width: 18px;
   height: 18px;
   background: #FF6969;

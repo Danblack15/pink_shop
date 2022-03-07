@@ -74,18 +74,18 @@ export const DataModule = {
 		},
 		setSubmit(state, res) {
 			state.submitForm = res
-		}	
+		}
 	},
 
 	actions: {
-		async fetchData({state, commit}) {
+		async fetchData({ state, commit }) {
 			try {
 				commit('setLoading', true)
-				
+
 				const api = 'http://test1.web-gu.ru/'
 				const res = await axios.get(api)
-				commit('setData', res.data)
 
+				commit('setData', res.data)
 			} catch (error) {
 				alert('Ошибка')
 				console.log(error)
@@ -93,7 +93,8 @@ export const DataModule = {
 				commit('setLoading', false)
 			}
 		},
-		async showModal({state, commit}, item) {
+
+		async showModal({ state, commit }, item) {
 			commit('setSelectedProductId', item)
 			commit('setModalVisible', !state.modalVisible)
 
@@ -113,7 +114,8 @@ export const DataModule = {
 				commit('setModalLoading', false)
 			}
 		},
-		basketLength({state, commit}) {
+
+		basketLength({ state, commit }) {
 			if (localStorage.basket) {
 				let basket = Object.values(JSON.parse(localStorage.basket))
 
@@ -122,11 +124,12 @@ export const DataModule = {
 				commit('setBasketLength', [])
 			}
 		},
-		basketVisible({state, commit}) {
+		basketVisible({ state, commit }) {
 			commit('setBasketVisible', !state.basketVisible)
 			commit('setSubmit', null)
 		},
-		removeBasketItem({state, commit}, item) {
+
+		removeBasketItem({ state, commit }, item) {
 			let basket = state.basketLength.filter((p) => p.id !== item.id)
 
 			commit('setBasketLength', state.basketLength.filter((p) => p.id !== item.id))
@@ -135,15 +138,16 @@ export const DataModule = {
 
 			localStorage.setItem('basket', basket)
 		},
-		async submitForm({state, commit}) {
-			try{
+		
+		async submitForm({ state, commit }) {
+			try {
 				const api = 'http://test1.web-gu.ru/?action=send_form'
 
 				const res = await axios.get(api)
 
 				commit('setSubmit', res)
 				commit('setBasketLength', [])
-			} catch(error) {
+			} catch (error) {
 				alert('Ошибка')
 				console.log(error)
 			} finally {

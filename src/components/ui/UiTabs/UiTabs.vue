@@ -72,6 +72,7 @@
             <div class="tabs__item-list__item__reviews__reviews__img">
               <img :src="item.avatar" alt="person" />
             </div>
+
             <div class="tabs__item-list__item__reviews__reviews__info">
               <div>
                 <p>{{ item.author }}</p>
@@ -94,7 +95,7 @@
         :class="{ show: selectedTab == 'tab-4' }"
         class="tabs__item-list__item"
       >
-        <ReviewBlock @create="createReview"/>
+        <ReviewBlock @create="createReview" />
       </UiTabsItem>
     </section>
   </section>
@@ -114,8 +115,8 @@ export default {
   data() {
     return {
       selectedTab: "tab-1",
-      reviewsLength: null
-    }
+      reviewsLength: null,
+    };
   },
 
   methods: {
@@ -132,7 +133,7 @@ export default {
 
     reviewsLen() {
       this.reviewsLength = this.item.reviews.length
-    }
+    },
   },
 };
 </script>

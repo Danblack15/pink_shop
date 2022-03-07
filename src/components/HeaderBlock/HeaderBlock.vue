@@ -4,14 +4,17 @@
       <img src="@/assets/img/money.svg" alt="money" />
       <p>SHOP</p>
     </router-link>
+
     <section class="header-links">
       <CategoryList />
       <div class="wrapper-basket" @click="showBasket">
         <img src="@/assets/img/basket.svg" alt="basket" />
-        <span 
+        <span
           v-if="this.basketLength.length > 0"
           class="wrapper-basket__length-basket"
-        >{{ this.basketLength.length }}</span>
+        >
+          {{ this.basketLength.length }}
+        </span>
       </div>
     </section>
   </header>
@@ -32,16 +35,16 @@ export default {
   methods: {
     ...mapActions({
       basketLengthAc: "data/basketLength",
-      showBasket: "data/basketVisible"
-    })
+      showBasket: "data/basketVisible",
+    }),
   },
 
   computed: {
     ...mapGetters({
       basketLength: "data/basketLength",
-      basketVisible: "data/basketVisible"
-    })
-  }
+      basketVisible: "data/basketVisible",
+    }),
+  },
 };
 </script>
 

@@ -1,4 +1,4 @@
-form{
+form {
     position: absolute;
     top: 0;
     left: 0;
@@ -8,19 +8,24 @@ form{
     padding-top: 26px;
     padding-bottom: 20px;
 }
-fieldset{
+
+fieldset {
     border: none;
 }
-.star-list p{
+
+.star-list p {
     margin-bottom: 10px;
 }
-.name-reviewer{
+
+.name-reviewer {
     margin-top: 22px;
 }
-.text-reviewer{
+
+.text-reviewer {
     margin-top: 22px;
 }
-.name-reviewer input{
+
+.name-reviewer input {
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #898989;
@@ -31,7 +36,8 @@ fieldset{
     padding: 11px 16px;
     margin-top: 9px;
 }
-.text-reviewer textarea{
+
+.text-reviewer textarea {
     width: 100%;
     height: 150px;
     background: #FFFFFF;
@@ -46,20 +52,25 @@ fieldset{
     padding: 11px 12px;
     margin-top: 9px;
 }
-.submit-review{
+
+.submit-review {
     margin-top: 26px;
 }
-#rate{
+
+#rate {
     display: none;
 }
-form::-webkit-scrollbar{
+
+form::-webkit-scrollbar {
     width: 5px;
-  }
-  form::-webkit-scrollbar-track{
+}
+
+form::-webkit-scrollbar-track {
     background: #898989;
     border-radius: 15px;
-  }
-  form::-webkit-scrollbar-thumb{
+}
+
+form::-webkit-scrollbar-thumb {
     background: #FF6969;
     border-radius: 15px;
-  }
+}

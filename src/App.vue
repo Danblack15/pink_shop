@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapActions } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 import HeaderBlock from "@/components/HeaderBlock/HeaderBlock";
 
@@ -24,8 +24,8 @@ export default {
   },
 
   computed: {
-    ...mapState({
-      data: (state) => state.data.data,
+    ...mapGetters({
+      data: "data/data"
     }),
   },
 };

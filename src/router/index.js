@@ -10,11 +10,11 @@ const routes = [
     },
     {
         path: '/:category',
-        component:  ProductsPage,
+        component: ProductsPage,
         children: [
             {
                 path: ':id',
-                component:  ProductsBlock
+                component: ProductsBlock
             },
         ]
     }

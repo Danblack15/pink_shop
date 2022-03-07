@@ -1,15 +1,15 @@
 <template>
-    <section>
-        <div class="item_tab">
-            <slot></slot>
-        </div>
-    </section>
+  <section>
+    <div class="item_tab">
+      <slot></slot>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-    name: "UiTabsItem"
-}
+  name: "UiTabsItem",
+};
 </script>
 
 <style src="./UiTabsItem.css" scoped>

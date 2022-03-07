@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import PodcategoryBlock from "@/components/PodcategoryBlock/PodcategoryBlock"
-import BasketBlock from '@/components/BasketBlock/BasketBlock'
+import PodcategoryBlock from "@/components/PodcategoryBlock/PodcategoryBlock";
+import BasketBlock from "@/components/BasketBlock/BasketBlock";
 
 export default {
   components: {
     PodcategoryBlock,
-    BasketBlock
+    BasketBlock,
   },
 };
 </script>

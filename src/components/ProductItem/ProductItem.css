@@ -42,10 +42,12 @@
 .item_product__info__button {
     margin-top: 34px;
 }
-.item_product__info__button div{
+
+.item_product__info__button div {
     display: flex;
 }
-.item_product__info__button img{
+
+.item_product__info__button img {
     width: 22px;
     height: 17px;
     margin-left: 7px;
