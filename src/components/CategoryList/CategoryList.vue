@@ -18,11 +18,36 @@ export default {
     CategoryItem,
   },
 
+  data() {
+    return {  
+      podcategoryForRoute: []
+    }
+  },
+
+  watch: {
+    "$route.path"() {
+      if (!this.$route.matched[1]) {
+        this.searhPodcategory()
+      }
+    },
+  },
+
+  methods: {
+    searhPodcategory() {
+      let parentId = this.$route.params.category
+      
+      this.podcategoryForRoute = this.data.filter((p) => p.parent_id == parentId)
+ 
+      this.$router.push(`/${parentId}/${this.podcategoryForRoute[0].id}`)
+    }
+  },
+
   computed: {
     ...mapGetters({
       sortData: "data/sortData",
       isLoading: "data/isLoading",
-    }),
+      data: "data/data"
+    })
   },
 };
 </script>

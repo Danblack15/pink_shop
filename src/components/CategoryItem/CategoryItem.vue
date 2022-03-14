@@ -1,10 +1,12 @@
 <template>
-  <router-link 
-    :to="'/' + item.id" 
-    class="category-item"
-  >
-    {{ item.name }}
-  </router-link>
+  <li class="category-item">
+    <router-link 
+      :to="'/' + item.id" 
+      class="category-item__href"
+    >
+      {{ item.name }}
+    </router-link>
+  </li>
 </template>
 
 <script>

@@ -1,10 +1,22 @@
 .podcategory-item {
   width: 100%;
-  padding: 16px 0;
-  padding-left: 30px;
   border-bottom: 1px solid #E4E4E4;
+  height: 50px;
+  position: relative;
 }
-
-.podcategory-item:hover {
+.podcategory-item__href{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.podcategory-item__href:hover{
   color: #FF6969;
+}
+.router-link-active {
+	color: #FF6969;
 }

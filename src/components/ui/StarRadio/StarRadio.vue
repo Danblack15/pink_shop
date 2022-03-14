@@ -19,10 +19,10 @@
 
 <script>
 export default {
-  name: "Star",
+  name: "StarRadio",
 };
 </script>
 
-<style src="./Star.css" scoped>
+<style src="./StarRadio.css" scoped>
 
 </style>

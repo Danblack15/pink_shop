@@ -1,6 +1,6 @@
 <template>
   <section class="podcategory_block">
-    <ul>
+    <ul class="podcategory_block__list">
       <PodcategoryItem
         v-for="item in this.podCategorySort"
         :key="item.id"

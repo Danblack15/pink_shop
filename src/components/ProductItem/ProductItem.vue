@@ -1,16 +1,24 @@
 <template>
-  <div class="item_product" :id="item.id">
-    <div class="item_product__img" @click="showModal(this.item)">
+  <div class="item-product" :id="item.id">
+    <div class="item-product__img" @click="showModal(this.item)">
       <img :src="item.img" :alt="item.name" />
     </div>
 
-    <div class="item_product__info">
-      <p @click="showModal(this.item)">{{ item.name }}</p>
-      <p>{{ item.price.toLocaleString("ru-RU") }} &#8381;</p>
+    <div class="item-product__info">
+      <h3 
+        class="item-product__info-name" 
+        @click="showModal(this.item)"
+      >
+        {{ item.name }}
+      </h3>
+      
+      <h4 class="item-product__info-price">
+        {{ item.price.toLocaleString("ru-RU") }} &#8381;
+      </h4>
 
-      <ButtonProduct class="item_product__info__button" @click="inBasket">
+      <ButtonProduct class="item-product__info__button" @click="inBasket">
         <p v-if="!this.validInBasket">Добавить в корзину</p>
-        <div v-else>
+        <div v-else class="item-product__info__button__in-basket">
           <p>В корзине</p>
           <img src="@/assets/img/success.svg" alt="success" />
         </div>

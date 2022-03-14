@@ -6,15 +6,11 @@
 	position: relative;
 }
 
-.podcategory_block ul {
+.podcategory_block__list {
 	display: flex;
 	flex-direction: column;
 }
 
 .loading_block {
 	margin-top: 100px;
-}
-
-.router-link-active {
-	color: #FF6969;
 }

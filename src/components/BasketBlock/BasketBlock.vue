@@ -2,15 +2,20 @@
   <section class="wrapper-basket" v-if="basketVisible" @click="showBasket">
     <div class="wrapper-basket__block" @click.stop>
       <div class="wrapper-basket__block__top">
-        <p>Оформить заказ</p>
-        <img src="@/assets/img/close.svg" alt="close" @click="showBasket" />
+        <p class="wrapper-basket__block__top__name">Оформить заказ</p>
+        <img 
+          src="@/assets/img/close.svg" 
+          alt="close" 
+          @click="showBasket"
+          class="wrapper-basket__block__top__image"
+        />
       </div>
       <div
         class="wrapper-basket__block__products"
         v-if="basketLength.length > 0 && submit == null"
       >
         <p class="wrapper-basket__block__products-name">В корзине:</p>
-        <section>
+        <section class="wrapper-basket__block__products__section">
           <BasketItem
             v-for="item in basketLength"
             :key="item.id"
@@ -58,14 +63,10 @@
           <ButtonProduct class="submit-btn"> Заказать </ButtonProduct>
         </form>
       </div>
-      <div v-else-if="submit" class="wrapper-basket__block__success-submit">
-        <img src="@/assets/img/successBlack.svg" alt="success" />
-        <p>Заказ успешно создан</p>
-      </div>
-      <div v-else class="wrapper-basket__block__not-found">
-        <img src="@/assets/img/basket.svg" alt="basket" />
-        <p>В корзине ничего нет</p>
-      </div>
+      
+      <BasketSuccessSubmit v-else-if="submit" />
+      
+      <BasketNotFound v-else />
     </div>
   </section>
 </template>

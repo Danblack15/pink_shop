@@ -2,15 +2,16 @@
   font-size: 18px;
   margin-right: 44px;
   height: 100%;
+}
+.category-item__href{
   display: flex;
   align-items: center;
+  height: 100%;
   border-bottom: 4px solid white;
 }
-
-.category-item:hover {
+.category-item__href:hover{
   border-bottom: 4px solid #ff6969;
 }
-
 .selected {
   border-bottom: 4px solid #ff6969;
 }

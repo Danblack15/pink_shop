@@ -7,6 +7,10 @@ import StarsList from '@/components/ui/StarsList/StarsList'
 import ReviewBlock from '@/components/ui/ReviewBlock/ReviewBlock'
 import Star from '@/components/ui/Star/Star'
 import BasketItem from '@/components/ui/BasketItem/BasketItem'
+import BasketSuccessSubmit from '@/components/ui/BasketSuccessSubmit/BasketSuccessSubmit'
+import BasketNotFound from '@/components/ui/BasketNotFound/BasketNotFound'
+import ReviewBlockStarList from '@/components/ui/ReviewBlockStarList/ReviewBlockStarList'
+import StarRadio from '@/components/ui/StarRadio/StarRadio'
 
 export default [
     LoadingBlock,
@@ -17,5 +21,9 @@ export default [
     StarsList,
     ReviewBlock,
     Star,
-    BasketItem
+    BasketItem,
+    BasketSuccessSubmit,
+    BasketNotFound,
+    ReviewBlockStarList,
+    StarRadio
 ]

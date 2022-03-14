@@ -10,10 +10,10 @@
       <div class="wrapper-basket" @click="showBasket">
         <img src="@/assets/img/basket.svg" alt="basket" />
         <span
-          v-if="this.basketLength.length > 0"
+          v-if="basketLength.length > 0"
           class="wrapper-basket__length-basket"
         >
-          {{ this.basketLength.length }}
+          {{ basketLength.length }}
         </span>
       </div>
     </section>

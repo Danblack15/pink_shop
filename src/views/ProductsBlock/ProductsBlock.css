@@ -1,4 +1,4 @@
-.products_block {
+.products-block {
   width: 100%;
   height: 100vh;
   padding-top: 95px;
@@ -7,18 +7,18 @@
   overflow-y: scroll;
 }
 
-.loading_block {
+.products-block__loading-block {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.products_block__enter {
+.products-block__enter {
   display: flex;
   flex-wrap: wrap;
 }
 
-.not_found {
+.products-block__not-found {
   font-size: 24px;
   position: absolute;
   top: 50%;
@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-.not_found img {
+.products-block__not-found img {
   width: 99px;
   margin-bottom: 26px;
 }

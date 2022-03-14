@@ -1,8 +1,8 @@
 <template>
-  <section class="products_block">
+  <section class="products-block">
     <section
       v-if="!isLoading && listProductsSort.length > 0"
-      class="products_block__enter"
+      class="products-block__enter"
     >
       <ProductItem 
         v-for="item in listProductsSort" 
@@ -13,13 +13,13 @@
 
     <div 
       v-else-if="!isLoading && listProductsSort.length == 0" 
-      class="not_found"
+      class="products-block__not-found"
     >
       <img src="@/assets/img/basket.svg" alt="" />
       <p>В данной категории товаров пока нет</p>
     </div>
 
-    <LoadingBlock v-else class="loading_block" />
+    <LoadingBlock v-else class="products-block__loading-block" />
   </section>
 </template>
 
